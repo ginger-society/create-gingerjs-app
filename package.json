@@ -1,5 +1,5 @@
 {
-  "name": "react_py",
+  "name": "gingerjs",
   "version": "0.0.1",
   "author": "py-react <yksandeep08+reactpy@gmail.com>",
   "description": "A helper library for gingerJs (A Truly Full-Stack Development Experience with Python)",
@@ -10,7 +10,10 @@
   "keywords": [],
   "license": "MIT",
   "dependencies": {
+    "commander": "^12.1.0"
   },
-  "devDependencies": {
-  }
+  "bin": {
+    "gingerjs": "./cli.js"
+  },
+  "devDependencies": {}
 }
