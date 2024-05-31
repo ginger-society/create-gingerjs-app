@@ -360,7 +360,7 @@ const createApp = (cwd,debug=false) => {
   );
 
   execSync("babel --extensions .js,.jsx ./__build__ -d ./build/app");
-  execSync("yarn build");
+  execSync("yarn gingerJs babel");
 
   try {
     if(!debug){
