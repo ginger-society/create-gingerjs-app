@@ -1,19 +1,31 @@
 {
-  "name": "gingerjs",
+  "name": "@ginger-society/create-gingerjs-app",
   "version": "0.0.1",
+  "private": false,
   "author": "py-react <yksandeep08+reactpy@gmail.com>",
   "description": "A helper library for gingerJs (A Truly Full-Stack Development Experience with Python)",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --extensions .js,.jsx ./src -d ./dist && webpack --stats-error-details;cp cli.js ./dist; cp createApp.js ./dist",
+    "prepare": "npm run build"
   },
   "keywords": [],
   "license": "MIT",
   "dependencies": {
+    "babel-loader": "^9.1.3",
     "commander": "^12.1.0"
   },
-  "bin": {
-    "gingerjs": "./cli.js"
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "nodemon": "^2.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
   },
-  "devDependencies": {}
+  "bin": {
+    "crrate-gingerjs-app": "./cli.js"
+  }
 }
