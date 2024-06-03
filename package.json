@@ -1,6 +1,6 @@
 {
-  "name": "@ginger-society/create-gingerjs-app",
-  "version": "0.0.1",
+  "name": "@ginger-society/ginger-js",
+  "version": "0.0.2",
   "private": false,
   "author": "py-react <yksandeep08+reactpy@gmail.com>",
   "description": "A helper library for gingerJs (A Truly Full-Stack Development Experience with Python)",
@@ -26,6 +26,6 @@
     "webpack-cli": "^4.0.0"
   },
   "bin": {
-    "crrate-gingerjs-app": "./cli.js"
+    "ginger-js": "./cli.js"
   }
 }
